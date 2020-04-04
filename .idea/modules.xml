@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-collect.iml" filepath="$PROJECT_DIR$/springboot-collect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-collect/springboot-dependencies/springboot-dependencies.iml" filepath="$PROJECT_DIR$/../springboot-collect/springboot-dependencies/springboot-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-collect/springboot-kafka/springboot-kafka.iml" filepath="$PROJECT_DIR$/../springboot-collect/springboot-kafka/springboot-kafka.iml" />
+    </modules>
+  </component>
+</project>

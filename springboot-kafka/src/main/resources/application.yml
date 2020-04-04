@@ -1,0 +1,23 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.189.131:9092 #指定kafka server的地址，集群配多个，中间，逗号隔开
+    producer:
+      retries: 0
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #扩展序列化类，方便传输实体对象或者List
+      value-serializer: com.zhou.wei.config.EncodeingKafka
+      batch-size: 16384
+      buffer-memory: 33554432
+      acks: 1
+    consumer:
+      #群组ID
+      group-id: default_consumer_group
+      #如果为true，则消费者的偏移量将在后台定期提交，默认值为true
+      enable-auto-commit: true
+      #如果'enable.auto.commit'为true，则消费者偏移自动提交给Kafka的频率（以毫秒为单位），默认值为5000。
+      auto-commit-interval: PT5S
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #扩展反序列化类，方便传输实体对象或者List
+      value-deserializer: com.zhou.wei.config.DecodeingKafka
+server:
+  port: 8500
