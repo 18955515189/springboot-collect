@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-kafka" />
+        <module name="springboot-rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-collect" target="1.8" />
       <module name="springboot-dependencies" target="1.8" />
       <module name="springboot-kafka" target="1.8" />
+      <module name="springboot-rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot-collect.iml" filepath="$PROJECT_DIR$/springboot-collect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../springboot-collect/springboot-dependencies/springboot-dependencies.iml" filepath="$PROJECT_DIR$/../springboot-collect/springboot-dependencies/springboot-dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../springboot-collect/springboot-kafka/springboot-kafka.iml" filepath="$PROJECT_DIR$/../springboot-collect/springboot-kafka/springboot-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dependencies/springboot-dependencies.iml" filepath="$PROJECT_DIR$/springboot-dependencies/springboot-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-kafka/springboot-kafka.iml" filepath="$PROJECT_DIR$/springboot-kafka/springboot-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-collect/springboot-rabbitmq/springboot-rabbitmq.iml" filepath="$PROJECT_DIR$/../springboot-collect/springboot-rabbitmq/springboot-rabbitmq.iml" />
     </modules>
   </component>
 </project>

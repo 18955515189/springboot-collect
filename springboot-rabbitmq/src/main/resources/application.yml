@@ -1,0 +1,14 @@
+server:
+  port: 8600
+spring:
+  application:
+    name: rabbitmq-provider
+  rabbitmq:
+    host: 192.168.189.131
+    port: 5673
+    username: admin
+    password: admin
+    #确认消息已发送到交换机(Exchange)
+    publisher-confirms: true
+    #确认消息已发送到队列(Queue)
+    publisher-returns: true

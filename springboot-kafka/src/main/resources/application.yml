@@ -5,7 +5,7 @@ spring:
       retries: 0
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       #扩展序列化类，方便传输实体对象或者List
-      value-serializer: com.zhou.wei.config.EncodeingKafka
+      value-serializer: com.zhou.wei.direct.EncodeingKafka
       batch-size: 16384
       buffer-memory: 33554432
       acks: 1
@@ -18,6 +18,6 @@ spring:
       auto-commit-interval: PT5S
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       #扩展反序列化类，方便传输实体对象或者List
-      value-deserializer: com.zhou.wei.config.DecodeingKafka
+      value-deserializer: com.zhou.wei.direct.DecodeingKafka
 server:
   port: 8500
