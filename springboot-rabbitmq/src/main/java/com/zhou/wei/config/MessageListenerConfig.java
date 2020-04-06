@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author 飞翔的胖哥
  * @version 1.0.0
- * @description TODO
+ * @description 消息确保机制添加
  * @since 2020/4/6 0006 23:42
  **/
 @Configuration

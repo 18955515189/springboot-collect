@@ -6,13 +6,10 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.listener.api.ChannelAwareMessageListener;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author 飞翔的胖哥
  * @version 1.0.0
- * @description TODO
+ * @description 消费端异步确保机制监听器
  * @since 2020/4/6 0006 23:43
  **/
 @Component
