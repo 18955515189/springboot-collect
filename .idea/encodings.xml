@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/../springboot-collect" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../springboot-collect/springboot-dependencies" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../springboot-collect/springboot-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-collect/springboot-quartz" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../springboot-collect/springboot-rabbitmq" charset="UTF-8" />
   </component>
 </project>

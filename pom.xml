@@ -15,6 +15,7 @@
         <module>springboot-dependencies</module>
         <module>springboot-kafka</module>
         <module>springboot-rabbitmq</module>
+        <module>springboot-quartz</module>
     </modules>
 
 </project>
