@@ -11,10 +11,11 @@ import java.util.Date;
  * @description Job类，工作的具体实现，即-需要干的事
  * @since 2020/4/10 0010 23:51
  **/
-public class MyFirstJob implements Job {
+@DisallowConcurrentExecution
+@PersistJobDataAfterExecution
+public class MyFirstCalendarJob implements Job {
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
-        System.out.println(" 做点啥呢，学个Quartz吧.......");
         //创建工作详情
         JobDetail jobDetail = context.getJobDetail();
         //获取工作的名称
@@ -35,10 +36,10 @@ public class MyFirstJob implements Job {
                        //立即开始
                       .startNow()
                        //每五秒执行一次，一直执行直到结束
-                      .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(5).repeatForever());
+                      .withSchedule(CalendarIntervalScheduleBuilder.calendarIntervalSchedule().withInterval(10,DateBuilder.IntervalUnit.DAY));
         Trigger trigger = triggerBuilder.build();
         //第三步:定义一个JobDetail
-        JobDetail jobDetail = JobBuilder.newJob(MyFirstJob.class)
+        JobDetail jobDetail = JobBuilder.newJob(MyFirstCalendarJob.class)
                 .withIdentity("测试任务1", "test1")
                 .usingJobData("data", "job_data_zhouwei")
                 .build();
@@ -46,8 +47,8 @@ public class MyFirstJob implements Job {
         scheduler.scheduleJob(jobDetail,trigger);
         //第五步:启动任务调度
         scheduler.start();
-
-
-
+        Thread.sleep(1000*20);
+        //第五步:启动任务调度
+        scheduler.shutdown();
     }
 }
